@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<script>
+  alert('Nhập 10 phần tử trong mảng ar');
+  let arr=[];
+  for(i = 0; i<10 ; i++ ){
+    let a = +prompt('Nhập giá trị của phần tử ' + 'arr['+i+']');
+    arr.push(a);
+    viTri = -1
+  }
+  let v = +prompt('nhập V')
+  for (let j = 0; j < arr.length; j++) {
+    if(v == arr[j]){
+      viTri = j;
+    }
+  }
+  if(viTri != -1){
+    alert('V thuộc mảng arr')
+  }
+  else {
+    alert('V không thuộc mảng arr')
+  }
+
+</script>
+</body>
+</html>

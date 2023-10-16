@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    alert('Nhập 10 phần tử trong mảng ar');
+    let arr=[];
+    for(i = 0; i<10 ; i++ ){
+        let a = +prompt('Nhập giá trị của phần tử ' + 'arr['+i+']');
+        arr.push(a);
+    }
+    document.write('Mảng : '+arr + '<br>')
+   let b = arr.sort((m,n) => m-n);
+    document.write('Mảng sau khi sắp xếp lại: '+ b);
+
+</script>
+</body>
+</html>

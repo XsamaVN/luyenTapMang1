@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<script>
+  let ar=[42,25,23,2,7,9,456,89,10,870];
+  let max = ar[0]
+  let viTri=0;
+  for (let i = 0; i < ar.length; i++) {
+    if(ar[i] >max ){
+      max = ar[i]
+      viTri = i;
+    }
+  }
+  document.write('max: '+max+ '<br>' + 'vị trí: ' + viTri);
+</script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let arr=[13,-9,-57,48,91,59,19,-44,-0.5];
+  dem=0;
+  for (let i = 0; i < arr.length; i++) {
+    if(Number.isInteger(arr[i])){
+      if(arr[i]<0){
+        dem++
+      }
+    }
+  }
+  document.write('số lượng phần tử là số nguyên âm: '+ dem);
+</script>
+</body>
+</html>

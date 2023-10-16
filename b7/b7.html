@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    alert('Nhập 10 phần tử trong mảng ar');
+    let arr=[];
+    for(i = 0; i<10 ; i++ ){
+        let a = +prompt('Nhập giá trị của phần tử ' + 'arr['+i+']');
+        arr.push(a);
+    }
+    let v = +prompt('nhập V')
+    let viTri = -1;
+    for (let j = 0; j < arr.length; j++) {
+        if(v == arr[j]){
+           viTri = j;
+        }
+    }
+    if (viTri != -1) {
+        arr.splice(viTri,1)
+        arr.push(0)
+        document.write(arr);
+    }
+    else {
+        alert('V không có trong mảng')
+    }
+
+
+</script>
+</body>
+</html>

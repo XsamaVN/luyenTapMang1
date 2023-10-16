@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<script>
+  let ar=[42,25,23,2,7,9,456,89,10,870];
+  let max = ar[0]
+  let tong = 0
+  for (let i = 0; i < ar.length; i++) {
+    tong+= ar[i];
+    if(ar[i] >max ){
+      max = ar[i];
+    }
+  }
+  document.write('max: '+max+ '<br>' + 'Trung bình cộng: ' + (tong/ar.length));
+</script>
+</body>
+</html>
